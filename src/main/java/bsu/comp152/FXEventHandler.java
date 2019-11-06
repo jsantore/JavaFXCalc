@@ -14,7 +14,8 @@ public class FXEventHandler {
     private Button two;
     @FXML
     private Button three;
-    String instanceVar;
+    int firstNumber;
+    String operation;
     @FXML
     public  void numberClicked(ActionEvent event){
         var numberPressed =((Button)event.getSource()).getText();
@@ -22,4 +23,34 @@ public class FXEventHandler {
         currentNum = currentNum+numberPressed;
         numbers.setText(currentNum);
     }
+
+    public void operatorClicked(ActionEvent event){
+        var numberAsText = numbers.getText();
+        firstNumber = Integer.parseInt(numberAsText);
+        numbers.clear();
+        operation = ((Button)event.getSource()).getText();
+    }
+
+    public void calculate(ActionEvent event){
+        var currentNumberAsText = numbers.getText();
+        var currentNumber = Integer.parseInt(currentNumberAsText);
+        switch(operation){
+            case "+":
+                var result = firstNumber + currentNumber;
+                numbers.setText(""+result);
+                break;
+            case "-":
+                result = firstNumber - currentNumber;
+                numbers.setText(""+result);
+                break;
+        }
+    }
+
+    @FXML
+    public void clear(ActionEvent event){
+        firstNumber = 0;
+        operation = "";
+        numbers.clear();
+    }
+
 }

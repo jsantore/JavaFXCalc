@@ -37,11 +37,12 @@
                         <Button fx:id="two" mnemonicParsing="false" onAction="#numberClicked" prefHeight="54.0" prefWidth="132.0" text="2" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.vgrow="ALWAYS" />
                         <Button fx:id="three" mnemonicParsing="false" onAction="#numberClicked" prefHeight="66.0" prefWidth="77.0" text="3" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.vgrow="ALWAYS" />
                         <Button fx:id="zero" mnemonicParsing="false" onAction="#numberClicked" prefHeight="49.0" prefWidth="125.0" text="0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.vgrow="ALWAYS" />
-                        <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="77.0" text="+" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS" />
-                        <Button mnemonicParsing="false" prefHeight="64.0" prefWidth="72.0" text="-" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS" />
-                        <Button mnemonicParsing="false" prefHeight="63.0" prefWidth="76.0" text="/" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.vgrow="ALWAYS" />
-                        <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="82.0" text="*" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.vgrow="ALWAYS" />
-                        <Button mnemonicParsing="false" prefHeight="48.0" prefWidth="77.0" text="=" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.vgrow="ALWAYS" />
+                        <Button mnemonicParsing="false" onAction="#operatorClicked" prefHeight="60.0" prefWidth="77.0" text="+" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS" />
+                        <Button mnemonicParsing="false" onAction="#operatorClicked" prefHeight="64.0" prefWidth="72.0" text="-" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS" />
+                        <Button mnemonicParsing="false" onAction="#operatorClicked" prefHeight="63.0" prefWidth="76.0" text="/" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.vgrow="ALWAYS" />
+                        <Button mnemonicParsing="false" onAction="#operatorClicked" prefHeight="45.0" prefWidth="82.0" text="*" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.vgrow="ALWAYS" />
+                        <Button mnemonicParsing="false" onAction="#calculate" prefHeight="48.0" prefWidth="77.0" text="=" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.vgrow="ALWAYS" />
+                  <Button fx:id="clear" mnemonicParsing="false" onAction="#clear" prefHeight="45.0" prefWidth="105.0" text="Clear" GridPane.rowIndex="3" />
                     </children>
                 </GridPane>
             </items>
